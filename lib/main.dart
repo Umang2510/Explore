@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import 'providers/great_places.dart';
 import 'Screens/places_list_screen.dart';
+import 'Screens/add_place_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +21,13 @@ class MyApp extends StatelessWidget {
         title: 'Explore',
         theme: ThemeData(
           primarySwatch: Colors.indigo,
-          colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.amber),
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: Colors.amber),
         ),
-        home: PlacesListScreen(),
+        home: const PlacesListScreen(),
+        routes: {
+          AddPalceScreen.rountName: (context) => const AddPalceScreen(),
+        },
       ),
     );
   }

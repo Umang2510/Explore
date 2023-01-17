@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'add_place_screen.dart';
+
 class PlacesListScreen extends StatelessWidget {
   const PlacesListScreen({super.key});
 
@@ -10,12 +12,16 @@ class PlacesListScreen extends StatelessWidget {
         title: const Text('Your Places'),
         actions: <Widget>[
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(AddPalceScreen.rountName);
+            },
             icon: const Icon(Icons.add),
           ),
         ],
       ),
-      body: Center(child: CircularProgressIndicator(),),
+      body: const Center(
+        child: CircularProgressIndicator(),
+      ),
     );
   }
 }
