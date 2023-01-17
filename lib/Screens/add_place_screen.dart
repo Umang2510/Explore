@@ -36,7 +36,7 @@ class _AddPalceScreenState extends State<AddPalceScreen> {
                       controller: _titleController,
                     ),
                     const SizedBox(height: 10,),
-                    ImageInput(),
+                    const ImageInput(),
                   ],
                 ),
               ),
