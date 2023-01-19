@@ -14,13 +14,13 @@ class PlaceLocation {
 class Place {
   final String id;
   final String title;
-  final PlaceLocation location;
+  final PlaceLocation? location;
   final File image; //File data type buit in dart, To sotre file in a device
 
   Place({
     required this.id,
     required this.title,
-    required this.location,
+    this.location,
     required this.image,
   });
 }
