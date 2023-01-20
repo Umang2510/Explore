@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../widgets/image_input.dart';
 import '../providers/great_places.dart';
+import '../widgets/location_input.dart';
 
 class AddPalceScreen extends StatefulWidget {
   const AddPalceScreen({super.key});
@@ -58,6 +59,10 @@ class _AddPalceScreenState extends State<AddPalceScreen> {
                       height: 10,
                     ),
                     ImageInput(_selectImage),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    LocationInput(),
                   ],
                 ),
               ),
